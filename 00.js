@@ -44,3 +44,14 @@ function Height(rectangle) {
     let height = rectangle.botY - rectangle.topY;
     return height < 0 ? height * -1 : height;
 }
+// Функция принимает объект-прямоугольник и возвращает
+// его площадь.
+
+function ShowArea(rectangle) {
+    alert(Area(rectangle));
+
+}
+function Area(rectangle) {
+    let area = Width(rectangle) * Height(rectangle);
+    return area;
+}
