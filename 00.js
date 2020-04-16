@@ -98,3 +98,15 @@ function Move(rectangle, moveX = +prompt('Enter + move x value'), moveY = +promp
     rectangle.botX += moveX;
     Render(rectangle);
 }
+
+function PointCheck(rectangle, PointX = +prompt('Enter + point x value'), PointY = +prompt('Enter + point y value')) {
+    if(PointX > rectangle.topX && PointX < rectangle.botX && PointY > rectangle.topY && PointY < rectangle.botY)
+    {
+        alert("Точка в прямоугольнике");
+    }
+    else
+    {
+        alert("Точка  не в прямоугольнике");
+    }
+    
+}
