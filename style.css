@@ -1,0 +1,12 @@
+#box {
+    background-color: red;
+    position: absolute;
+    transition: all .3s;
+}
+
+#container {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    background-color: whitesmoke;
+}
