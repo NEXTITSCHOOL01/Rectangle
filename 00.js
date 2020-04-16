@@ -78,3 +78,9 @@ function ChangeWidthHeight(rectangle, width = +prompt('Enter + width value'), he
     rectangle.botY += height;
     Render(rectangle);
 }
+
+function MoveX(rectangle, move = +prompt('Enter + move value')) {
+    rectangle.topX += move;
+    rectangle.botX += move;
+    Render(rectangle);
+}
