@@ -1,7 +1,7 @@
 #box {
     background-color: red;
     position: absolute;
-    transition: all .3s;
+    transition: all 1s;
 }
 
 #container {

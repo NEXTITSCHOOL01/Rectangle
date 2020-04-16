@@ -51,6 +51,7 @@ function ShowArea(rectangle) {
     alert(Area(rectangle));
 
 }
+
 function Area(rectangle) {
     let area = Width(rectangle) * Height(rectangle);
     return area;
@@ -60,7 +61,13 @@ function ShowPerimetr(rectangle) {
     alert(Perimetr(rectangle));
 
 }
+
 function Perimetr(rectangle) {
     let perimetr = (Width(rectangle) + Height(rectangle)) * 2;
     return perimetr;
+}
+
+function ChangeWidth(rectangle, width = +prompt('Enter + width value')) {
+    rectangle.botX += width;
+    Render(rectangle);
 }
