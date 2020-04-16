@@ -7,7 +7,7 @@ let rectangle = {
 
 function Render(rectangle) {
     let box = document.getElementById('box');
-    box.style.width = (rectangle.botX - rectangle.topX) + 'px';
+    box.style.width = Width(rectangle) + 'px';
     box.style.height = (rectangle.botY - rectangle.topY) + 'px';
     box.style.top = rectangle.topX + 'px';
     box.style.left = rectangle.topY + 'px';
@@ -24,3 +24,14 @@ function ShowInfo(rectangle) {
     }
     alert(buf);
 }
+
+function ShowWidth(rectangle) {
+    let width = Width(rectangle);
+    alert(width);
+}
+
+function Width(rectangle) {
+    let width = rectangle.botX - rectangle.topX;
+    return width < 0 ? width * -1 : width;
+}
+
