@@ -84,3 +84,9 @@ function MoveX(rectangle, move = +prompt('Enter + move value')) {
     rectangle.botX += move;
     Render(rectangle);
 }
+
+function MoveY(rectangle, move = +prompt('Enter + move value')) {
+    rectangle.topY += move;
+    rectangle.botY += move;
+    Render(rectangle);
+}
