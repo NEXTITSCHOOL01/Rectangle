@@ -90,3 +90,11 @@ function MoveY(rectangle, move = +prompt('Enter + move value')) {
     rectangle.botY += move;
     Render(rectangle);
 }
+
+function Move(rectangle, moveX = +prompt('Enter + move x value'), moveY = +prompt('Enter + move y value')) {
+    rectangle.topY += moveY;
+    rectangle.botY += moveY;
+    rectangle.topX += moveX;
+    rectangle.botX += moveX;
+    Render(rectangle);
+}
