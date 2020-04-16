@@ -55,3 +55,12 @@ function Area(rectangle) {
     let area = Width(rectangle) * Height(rectangle);
     return area;
 }
+
+function ShowPerimetr(rectangle) {
+    alert(Perimetr(rectangle));
+
+}
+function Perimetr(rectangle) {
+    let perimetr = (Width(rectangle) + Height(rectangle)) * 2;
+    return perimetr;
+}
