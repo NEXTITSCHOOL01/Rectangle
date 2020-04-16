@@ -71,3 +71,10 @@ function ChangeWidth(rectangle, width = +prompt('Enter + width value')) {
     rectangle.botX += width;
     Render(rectangle);
 }
+
+
+function ChangeWidthHeight(rectangle, width = +prompt('Enter + width value'), height = +prompt('Enter + height value')) {
+    rectangle.botX += width;
+    rectangle.botY += height;
+    Render(rectangle);
+}
