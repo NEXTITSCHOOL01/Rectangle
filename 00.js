@@ -8,7 +8,7 @@ let rectangle = {
 function Render(rectangle) {
     let box = document.getElementById('box');
     box.style.width = Width(rectangle) + 'px';
-    box.style.height = (rectangle.botY - rectangle.topY) + 'px';
+    box.style.height = Height(rectangle) + 'px';
     box.style.top = rectangle.topX + 'px';
     box.style.left = rectangle.topY + 'px';
 }
@@ -35,3 +35,12 @@ function Width(rectangle) {
     return width < 0 ? width * -1 : width;
 }
 
+function ShowHeight(rectangle) {
+    let height = Height(rectangle);
+    alert(height);
+}
+
+function Height(rectangle) {
+    let height = rectangle.botY - rectangle.topY;
+    return height < 0 ? height * -1 : height;
+}
